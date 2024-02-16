@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+html,
+body {
+    font-family: $ff-rk;
+}
+
+h1 {
+    color: $col-darknavy !important;
+    font-size: 56px !important;
+}
+.main-btn {
+    background-color: $col-purple;
+    font-family: $ff-rk;
+    font-size: 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    max-width: 350px;
+    padding: 4px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+    
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.option-btn {
+    font-family: $ff-rk;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    text-decoration: none;
+    color: $col-darknavy;
+    box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 8px 20px;
+    display: flex;
+    border: 3px solid #fff !important;
+    cursor: pointer;
+
+    &:hover {
+        .btn-rectangle {
+            background-color: #F6E7FF;
+            color: $col-purple;
+        }
+    }
+
+    .btn-rectangle {
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 12px;
+        background-color: $col-grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $col-greynavy;
+        font-weight: 500;
+        font-size: 24px;
+        margin-right: 24px;
+    }
+
+    &.selected {
+        border: 3px solid $col-purple !important;
+
+        .btn-rectangle {
+            background-color: $col-purple;
+            color: white;
+        }
+    }
+
+    &.picked {
+        &--correct {
+            border: 3px solid $col-green !important;
+
+            .btn-rectangle {
+                background-color: $col-green !important;
+                color: white !important;
+            }
+        }
+
+        &--incorrect {
+            border: 3px solid $col-red !important;
+
+            .btn-rectangle {
+                background-color: $col-red !important;
+                color: white !important;
+            }
+        }
+    }
+
+    &.picked,
+    &.picked--correct,
+    &.picked--incorrect,
+    &.selected {
+        .btn-text {
+            flex-grow: 1;
+        }
+
+        .btn-rectangle {
+            color: $col-greynavy;
+            background-color: $col-grey;
+        }
+    }
+}

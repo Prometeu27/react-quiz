@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+html,
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  color: #3B4D66 !important;
+  font-size: 56px !important;
+}
+
+.main-btn {
+  background-color: #A729F5;
+  font-family: "Rubik", sans-serif;
+  font-size: 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  max-width: 350px;
+  padding: 4px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.main-btn:hover {
+  opacity: 0.7;
+}
+
+.option-btn {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #3B4D66;
+  -webkit-box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+          box-shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+  padding: 8px 20px;
+  display: flex;
+  border: 3px solid #fff !important;
+  cursor: pointer;
+}
+.option-btn:hover .btn-rectangle {
+  background-color: #F6E7FF;
+  color: #A729F5;
+}
+.option-btn .btn-rectangle {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 12px;
+  background-color: #F4F6FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #626C7F;
+  font-weight: 500;
+  font-size: 24px;
+  margin-right: 24px;
+}
+.option-btn.selected {
+  border: 3px solid #A729F5 !important;
+}
+.option-btn.selected .btn-rectangle {
+  background-color: #A729F5;
+  color: white;
+}
+.option-btn.picked--correct {
+  border: 3px solid #26D782 !important;
+}
+.option-btn.picked--correct .btn-rectangle {
+  background-color: #26D782 !important;
+  color: white !important;
+}
+.option-btn.picked--incorrect {
+  border: 3px solid #EE5454 !important;
+}
+.option-btn.picked--incorrect .btn-rectangle {
+  background-color: #EE5454 !important;
+  color: white !important;
+}
+.option-btn.picked .btn-text, .option-btn.picked--correct .btn-text, .option-btn.picked--incorrect .btn-text, .option-btn.selected .btn-text {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.option-btn.picked .btn-rectangle, .option-btn.picked--correct .btn-rectangle, .option-btn.picked--incorrect .btn-rectangle, .option-btn.selected .btn-rectangle {
+  color: #626C7F;
+  background-color: #F4F6FA;
+}
